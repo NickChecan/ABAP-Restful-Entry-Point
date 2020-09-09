@@ -1,0 +1,11 @@
+unmanaged implementation in class z_i_booking unique;
+
+define behavior for ZI_BOOKING alias booking
+//late numbering
+lock master
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+}

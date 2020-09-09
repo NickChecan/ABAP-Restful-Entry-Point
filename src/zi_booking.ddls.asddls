@@ -11,9 +11,9 @@
     title: { type: #STANDARD, value: 'Booking' }
   }
 }
-define view ZI_BOOKING
+define root view ZI_BOOKING
   as select from ztbooking as Booking
-  association [0..1] to I_Country  as _Country  on $projection.country = _Country.Country
+  association [0..1] to I_Country  as _Country on $projection.country = _Country.Country
   association [0..1] to I_Currency as _Currency on $projection.CurrencyCode = _Currency.Currency
 {
 
